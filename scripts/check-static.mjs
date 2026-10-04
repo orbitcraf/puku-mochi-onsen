@@ -7,7 +7,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const html = await readFile(path.join(root, "index.html"), "utf8");
 const css = await readFile(path.join(root, "styles.css"), "utf8");
 const app = await readFile(path.join(root, "app.js"), "utf8");
-const pageCount = (html.match(/class="book-page\b/g) || []).length;
+const pageCount = (html.match(/<article\b[^>]*\bclass="[^"]*\bbook-page\b[^"]*"/g) || []).length;
 if (pageCount !== 11) throw new Error(`Expected 11 book pages, found ${pageCount}`);
 
 const imagePaths = [...html.matchAll(/<(?:img|source)\b[^>]*?\b(?:src|srcset)="([^"]+)"/g)]

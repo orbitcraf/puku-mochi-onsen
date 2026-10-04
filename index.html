@@ -7,22 +7,23 @@
   <meta name="description" content="ぷくともちが あったかい おんせんまちへ でかける、ぜん11ページの えほんです。">
   <title>ぷくともちの 温泉旅行</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f5bd62'/%3E%3Cpath d='M12 47c9-8 16 5 25-3s13 0 16-8' fill='none' stroke='%231c285c' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M24 24c-6-5 3-8 0-13m13 13c-6-5 3-8 0-13' fill='none' stroke='%23fffdf3' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=onsen-4">
+  <link rel="stylesheet" href="styles.css?v=onsen-5">
 </head>
 <body>
   <a class="skip-link" href="#book-controls">ページおくりへ いどう</a>
   <div class="book-stage">
-    <main class="storybook" id="book-app" aria-label="えほん ぷくともちの 温泉旅行">
-      <div class="book-viewport" id="book-viewport">
-        <article class="book-page cover-page is-active" data-page-id="cover" aria-hidden="false">
-          <div class="cover-art illustration-leaf"><img src="assets/onsen-cover.webp" alt="ゆうやけの おんせんまちへ とうちゃくした ぷくともち" width="1024" height="1024" fetchpriority="high"></div>
+    <main class="book storybook" id="book-app" aria-label="えほん ぷくともちの 温泉旅行">
+      <div class="book__viewport book-viewport" id="book-viewport">
+        <article class="page book-page book-page--cover is-active" data-page-id="cover" aria-hidden="false">
+          <picture><source media="(max-width: 820px) and (orientation: portrait)" srcset="assets/onsen-cover-mobile.jpg"><img class="cover-art" src="assets/onsen-cover.webp" alt="ゆうやけの おんせんまちで わくわくする ぷくともち" width="1024" height="1024" fetchpriority="high"></picture>
+          <div class="cover-shade" aria-hidden="true"></div>
           <div class="cover-copy">
             <p class="cover-eyebrow"><span>ぷく</span><i>と</i><span>もち</span><i>の</i></p>
             <h1 data-page-title tabindex="-1">温泉旅行</h1>
-            <p class="cover-intro">あったかい ゆげのまちへ、<br>ふたりで しゅっぱつ！</p>
+            <p>あったかい ゆげのまちへ、<br>ふたりで しゅっぱつ！</p>
             <button class="wood-button" type="button" data-go-next>ほんを ひらく <span aria-hidden="true">→</span></button>
-            <p class="swipe-hint">スワイプでも めくれるよ　→</p>
           </div>
+          <p class="swipe-hint" aria-hidden="true">スワイプでも めくれるよ　→</p>
         </article>
 
         <article class="book-page" data-page-id="train" aria-hidden="true" inert>

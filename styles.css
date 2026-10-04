@@ -37,6 +37,7 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .book-viewport::before { content: ""; position: absolute; z-index: 40; top: 0; bottom: 0; left: 50%; width: 12px; transform: translateX(-50%); pointer-events: none; background: linear-gradient(90deg, rgba(28,40,92,.12), rgba(255,255,255,.82) 45%, rgba(28,40,92,.12)); opacity: .7; }
 .book-page { position: absolute; z-index: 1; inset: 0; display: none; overflow: hidden; background: var(--paper); }
 .book-page.is-active { z-index: 3; display: block; }
+.book-page.cover-page.is-active, .book-page.ending-page.is-active { display: grid; }
 .book-spread, .cover-page, .ending-page { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); width: 100%; height: 100%; }
 .cover-page, .ending-page { background: linear-gradient(145deg, #fff9e6, #f9e8c6); }
 .book-spread--reverse { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); }

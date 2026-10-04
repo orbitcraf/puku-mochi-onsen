@@ -60,7 +60,7 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .cover-eyebrow span:first-child { color: #d73c9a; }
 .cover-eyebrow span:nth-of-type(2) { color: #148c9d; }
 .cover-eyebrow i { margin: 0 .12em; color: var(--orange); font-style: normal; }
-.cover-copy h1 { margin: 0; color: var(--navy); font-size: clamp(3.5rem, 7.3vw, 6.4rem); font-weight: 1000; line-height: 1.02; letter-spacing: -.08em; white-space: nowrap; text-shadow: 3px 4px 0 rgba(255,224,93,.85); }
+.cover-copy h1 { margin: 0; color: white; font-size: clamp(3.5rem, 7.3vw, 6.4rem); font-weight: 1000; line-height: 1.02; letter-spacing: -.08em; white-space: nowrap; text-shadow: -4px -4px var(--navy), 4px -4px var(--navy), -4px 4px var(--navy), 4px 4px var(--navy), 0 8px rgba(28,40,92,.2); }
 .cover-intro { margin: 22px 0 22px; font-size: clamp(1rem, 1.7vw, 1.25rem); font-weight: 900; }
 .wood-button { display: inline-flex; align-items: center; gap: 13px; min-height: 56px; padding: 8px 20px 8px 24px; background: var(--orange); border: 4px solid var(--navy); border-radius: 12px 17px 11px 15px; box-shadow: 0 6px 0 var(--navy); font-weight: 1000; cursor: pointer; }
 .wood-button span { display: grid; place-items: center; width: 32px; height: 32px; background: var(--sun); border-radius: 50%; }
@@ -117,7 +117,7 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
   .character-note { margin-top: 8px !important; padding: 6px 10px; border-left-width: 4px; font-size: .84rem !important; }
   .cover-copy { align-items: center; padding: 8px 16px 7px; text-align: center; }
   .cover-eyebrow { font-size: 1rem; }
-  .cover-copy h1 { font-size: clamp(2.5rem, 10vw, 4rem); }
+  .cover-copy h1 { font-size: clamp(2.5rem, 10vw, 4rem); text-shadow: -2px -2px var(--navy), 2px -2px var(--navy), -2px 2px var(--navy), 2px 2px var(--navy), 0 5px rgba(28,40,92,.2); }
   .cover-intro { margin: 6px 0 9px; font-size: .88rem; line-height: 1.35; }
   .wood-button { min-height: 42px; gap: 8px; padding: 4px 12px 4px 15px; border-width: 3px; border-radius: 10px 14px 9px 12px; box-shadow: 0 4px 0 var(--navy); font-size: .88rem; }
   .wood-button span { width: 26px; height: 26px; }

@@ -7,7 +7,7 @@
   <meta name="description" content="ぷくともちが あったかい おんせんまちへ でかける、ぜん11ページの えほんです。">
   <title>ぷくともちの 温泉旅行</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f5bd62'/%3E%3Cpath d='M12 47c9-8 16 5 25-3s13 0 16-8' fill='none' stroke='%231c285c' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M24 24c-6-5 3-8 0-13m13 13c-6-5 3-8 0-13' fill='none' stroke='%23fffdf3' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=onsen-6">
+  <link rel="stylesheet" href="styles.css?v=onsen-11">
 </head>
 <body>
   <a class="skip-link" href="#book-controls">ページおくりへ いどう</a>
@@ -15,7 +15,7 @@
     <main class="book storybook" id="book-app" aria-label="えほん ぷくともちの 温泉旅行">
       <div class="book__viewport book-viewport" id="book-viewport">
         <article class="page book-page book-page--cover is-active" data-page-id="cover" aria-hidden="false">
-          <picture><source media="(min-width: 821px)" srcset="assets/onsen-cover-desktop.jpg"><source media="(max-width: 820px) and (orientation: portrait)" srcset="assets/onsen-cover-mobile.jpg"><img class="cover-art" src="assets/onsen-cover.webp" alt="ゆうやけの おんせんまちで わくわくする ぷくともち" width="1024" height="1024" fetchpriority="high"></picture>
+          <picture><source media="(min-width: 821px)" srcset="assets/onsen-cover-desktop.jpg"><source media="(max-width: 820px) and (orientation: portrait)" srcset="assets/onsen-cover-mobile.jpg"><source media="(max-width: 820px) and (orientation: landscape)" srcset="assets/onsen-cover-desktop.jpg"><img class="cover-art" src="assets/onsen-cover.webp" alt="ゆうやけの おんせんまちで わくわくする ぷくともち" width="1024" height="1024" fetchpriority="high"></picture>
           <div class="cover-shade" aria-hidden="true"></div>
           <div class="cover-copy">
             <p class="cover-eyebrow"><span>ぷく</span><i>と</i><span>もち</span><i>の</i></p>
@@ -89,9 +89,10 @@
           </div>
         </article>
 
-        <article class="book-page ending-page" data-page-id="memories" aria-hidden="true" inert>
-          <figure class="illustration-leaf ending-art"><img src="assets/onsen-memories.webp" alt="たびの おもいでを ふりかえる ぷくともち" width="1024" height="1024" loading="lazy"></figure>
-          <section class="ending-copy"><p class="scene-label">たびの おもいで</p><h2 data-page-title tabindex="-1"><span>たのしかったね。</span><span>また いこうね。</span></h2><p>まんじゅうも おふろも、<br>ふたりで たのしんだね。</p><div class="ending-actions"><button class="paper-button paper-button--memory" id="open-memories" type="button">おもいでを みる</button><button class="paper-button" type="button" data-go-page="cover">さいしょから ↻</button></div></section>
+        <article class="page book-page book-page--ending" data-page-id="memories" aria-hidden="true" inert>
+          <picture><source media="(min-width: 821px)" srcset="assets/onsen-memories-desktop.jpg"><source media="(max-width: 820px) and (orientation: portrait)" srcset="assets/onsen-memories-mobile.jpg"><source media="(max-width: 820px) and (orientation: landscape)" srcset="assets/onsen-memories-desktop.jpg"><img class="ending-art" src="assets/onsen-memories.webp" alt="ゆかたで おもいでの えほんを ひらく ぷくともち" width="1024" height="1024" loading="lazy"></picture>
+          <div class="ending-shade" aria-hidden="true"></div>
+          <div class="ending-copy"><p>たびのおわりに、ふたりで にっこり。</p><h2 data-page-title tabindex="-1"><span>たのしかったね。</span><span>また いこうね。</span></h2><div class="ending-actions"><button class="paper-button paper-button--memory" id="open-memories" type="button">おもいでを みる</button><button class="paper-button" type="button" data-go-page="cover">さいしょから ↻</button></div></div>
         </article>
       </div>
       <nav class="book-controls" id="book-controls" aria-label="えほんの ページおくり">
